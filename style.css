@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.container p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+
+    background-color: #ff4d88;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 50px;
+    font-size: 18px;
+
+    transition: 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #a60b10;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #6f0202;
+    transform: scale(0.95);
+}
+
+.pdfModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.9);
+
+    display: none;
+}
+
+.pdfModal:target {
+    display: block;
+}
+
+.pdfModal iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.closeBtn:hover {
+    color: red;
+}
+
